@@ -56,12 +56,12 @@ function startAutomaticCommands() {
     // Commande work toutes les 20 minutes
     setInterval(async () => {
         await executeSlashCommand(channel, 'work');
-    }, 20 * 60 * 1000);
+    }, 10 * 60 * 1000);
 
     // Commande daily toutes les 24 heures
     setInterval(async () => {
         await executeSlashCommand(channel, 'daily');
-    }, 24 * 60 * 60 * 1000);
+    }, 12 * 60 * 60 * 1000);
 
     // Exécuter les commandes immédiatement au démarrage
     setTimeout(async () => {
